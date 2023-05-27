@@ -103,3 +103,23 @@ async function mktcapsortdata () {
   let mkcapsortbtn = document.getElementById("mktcap_sort");
 
   mkcapsortbtn.addEventListener('click',mktcapsortdata );
+
+
+  //Search Button By Percentage Change
+
+  async function percentsortdata() {
+console.log("entered2");
+try {
+  const percentprom= await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false");
+  const percentdata=await percentprom.json();
+  percentdata.sort((a,b) => a.price_change_percentage_24h - b.price_change_percentage_24h);
+  addDatatoUi(percentdata);
+}
+catch(error) {
+  alert("Some Error Ocurred");
+}
+  }
+
+  let percentsortbtn = document.getElementById("percent_sort");
+
+  percentsortbtn.addEventListener('click', percentsortdata);
