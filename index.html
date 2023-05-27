@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crpto Currency Realtime Prices</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="pricetable">
+      <div class="content">
+        <div id="headbar">
+          <div id="searchbar">
+          <input
+            id="name_symb"
+            type="text"
+            placeholder="Search By Name or Symbol"
+          />
+          <button id="search">Search</button>
+        </div>
+          <button id="mktcap_sort">Sort By Mkt Cap</button>
+          <button id="percent_sort">Sort By Percentage</button>
+        </div>
+        <div id="tablebox">
+        <div class="colheadings">
+          <div>Crpto Coin</div>
+          <div>Symbol</div>
+          <div>Realtime Price</div>
+          <div>Volume</div>
+          <div>Price Chg.</div>
+          <div>Capitalisation</div>
+        </div>
+
+          <!-- <div class="dataelem">
+            <div class="block">
+              <div class="image">
+                <img
+                  src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+                  alt=""
+                />
+              </div>
+              <div class="name">Bitcoin</div>
+            </div>
+            <div class="symbol">BTC</div>
+            <div class="current_price">$21</div>
+            <div class="total_volume">$5645665465</div>
+            <div class="price_change_percentage_24h '${col}'">1.25</div>
+            <div class="market_cap">Mkt Cap:$454,858,669</div>
+          </div> -->
+
+          
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
