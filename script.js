@@ -14,12 +14,12 @@ function addDatatoUi(datalist) {
     division.className ="dataelem";
     let ratecolor="red"
     function pricecolor () {
-      if(object[i].price_change_percentage_24h > 0)
+      if(object.price_change_percentage_24h >=0)
       {
         ratecolor="green"
       }
     }
-    pricecolor();
+    pricecolor (); 
     let inHTML = 
     `<div class="block">
     <div class="image">
